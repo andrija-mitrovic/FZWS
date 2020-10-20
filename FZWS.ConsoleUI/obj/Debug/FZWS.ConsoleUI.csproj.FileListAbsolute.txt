@@ -6,3 +6,5 @@ D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\bin\Debug\FZWS.Core.pdb
 D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\obj\Debug\FZWS.ConsoleUI.csprojResolveAssemblyReference.cache
 D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\obj\Debug\FZWS.ConsoleUI.exe
 D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\obj\Debug\FZWS.ConsoleUI.pdb
+D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\WinForms\FZWS\FZWS.ConsoleUI\bin\Debug\Newtonsoft.Json.xml

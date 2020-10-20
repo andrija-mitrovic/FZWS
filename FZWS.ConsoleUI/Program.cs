@@ -1,4 +1,5 @@
 ﻿using FZWS.Core;
+using FZWS.Core.Models.Lager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +10,13 @@ namespace FZWS.ConsoleUI
 {
     class Program
     {
-        const string USTANOVA_ID = "**";
-        const string ORG_JEDINICA = "**";
-        const string USERNAME = "zalihe13";
-        const string PASSWORD = "8TRbXMK$dn5iy-+L";
+        const string USTANOVA_ID = "******";
+        const string ORG_JEDINICA = "*******";
+        const string USERNAME = "*******";
+        const string PASSWORD = "*******";
 
         static FZWSConfig _config;
+        static FZWSClient _client;
 
         static void Main(string[] args)
         {
@@ -25,6 +27,8 @@ namespace FZWS.ConsoleUI
                 Username = USERNAME,
                 Password = PASSWORD
             };
+
+            _client = new FZWSClient(_config);
 
             Execute();
         }
@@ -45,7 +49,27 @@ namespace FZWS.ConsoleUI
             {
                 try
                 {
-
+                    switch (broj)
+                    {
+                        case 1:
+                            GetUstanove();
+                            break;
+                        case 2:
+                            GetOrganizacioneJedinice();
+                            break;
+                        case 3:
+                            GetJediniceMjere();
+                            break;
+                        case 4:
+                            GetLijekoviLager();
+                            break;
+                        case 5:
+                            GetProizvodjaci();
+                            break;
+                        case 6:
+                            SendLager();
+                            break;
+                    }
                 }
                 catch(Exception ex)
                 {
@@ -53,8 +77,80 @@ namespace FZWS.ConsoleUI
                     Console.WriteLine(ex.Message);
                 }
             }
+
+            Console.WriteLine("============================");
+            Execute();
         }
 
-        
+        private static void GetUstanove()
+        {
+            var result = _client.GetUstanove();
+            PrintResult(result);
+        }
+
+        private static void GetOrganizacioneJedinice()
+        {
+            var result = _client.GetOrganizacioneJedinice();
+            PrintResult(result);
+        }
+
+        private static void GetJediniceMjere()
+        {
+            var result = _client.GetJediniceMjere();
+            PrintResult(result);
+        }
+
+        private static void GetLijekoviLager()
+        {
+            var result = _client.GetLijekoviLager();
+            PrintResult(result);
+        }
+
+        private static void GetProizvodjaci()
+        {
+            var result = _client.GetProizvodajci();
+            PrintResult(result);
+        }
+
+        private static void SendLager()
+        {
+            var testData = TestData();
+            var result = _client.SendLager(testData);
+            PrintResult(result);
+        }
+
+        private static void PrintResult(object data)
+        {
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(data, Newtonsoft.Json.Formatting.Indented);
+            Console.Write(json);
+            Console.WriteLine("============================");
+        }
+
+        private static PostLagerRequest TestData()
+        {
+            return new PostLagerRequest()
+            {
+                new Lager()
+                {
+                    ApotekaId = ORG_JEDINICA,
+                    SifraFond = "N04BX601002",
+                    Sifra = "1",
+                    Naziv = "Test- Tasmar tabl.",
+                    JMFond = "kut.",
+                    Kolicina = 100,
+                    Datum = $"{DateTime.Now:dd.MM.yyyy}"
+                },
+                new Lager()
+                {
+                    ApotekaId = ORG_JEDINICA,
+                    SifraFond = "C02LA510203",
+                    Sifra = "2",
+                    Naziv = "Test- Brinedrin",
+                    JMFond = "kut.",
+                    Kolicina = 74,
+                    Datum = $"{DateTime.Now:dd.MM.yyyy}"
+                }
+            };
+        }
     }
 }

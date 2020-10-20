@@ -9,7 +9,7 @@ namespace FZWS.Core
 {
     public class FZWSConfig
     {
-        public string SifraUstanove { get; set; }
+        public string UstanoveId { get; set; }
         public string OrgJedinicaId { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }

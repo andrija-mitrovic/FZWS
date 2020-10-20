@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,10 +52,12 @@
     <Compile Include="Models\Sifarnici\Proizvodjac.cs" />
     <Compile Include="Models\Sifarnici\Ustanova.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\GetSifarniciProxy.cs" />
+    <Compile Include="Proxy\LagerProxy.cs" />
+    <Compile Include="Proxy\PrijemLageraProxy.cs" />
+    <Compile Include="Proxy\SifarniciProxy.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Proxy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

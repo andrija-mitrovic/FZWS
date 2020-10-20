@@ -1,0 +1,5 @@
+---Sifarnici---
+wsdl /out:D:\Projects\WinForms\FZWS\getSifarnici.cs D:\Projects\WinForms\FZWS\getSifarnici.wsdl D:\Projects\WinForms\FZWS\sifarnici.xsd
+
+---Lager---
+wsdl /out:D:\Projects\WinForms\FZWS\prijemLagera.cs D:\Projects\WinForms\FZWS\prijemLagera.wsdl D:\Projects\WinForms\FZWS\lager.xsd

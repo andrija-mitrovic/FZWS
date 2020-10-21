@@ -1,0 +1,16 @@
+D:\Projects\WinForms\FZWS\FZWS.WinUI\bin\Debug\FZWS.WinUI.exe.config
+D:\Projects\WinForms\FZWS\FZWS.WinUI\bin\Debug\FZWS.WinUI.exe
+D:\Projects\WinForms\FZWS\FZWS.WinUI\bin\Debug\FZWS.WinUI.pdb
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.csprojResolveAssemblyReference.cache
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.Meni.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.Properties.Resources.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.csproj.GenerateResource.Cache
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.exe
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.pdb
+D:\Projects\WinForms\FZWS\FZWS.WinUI\bin\Debug\FZWS.Core.dll
+D:\Projects\WinForms\FZWS\FZWS.WinUI\bin\Debug\FZWS.Core.pdb
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.Ustanove.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.OrgJedinice.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.JedMjere.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.LijekLager.resources
+D:\Projects\WinForms\FZWS\FZWS.WinUI\obj\Debug\FZWS.WinUI.Proizvodjaci.resources

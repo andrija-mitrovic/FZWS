@@ -3,6 +3,7 @@ using FZWS.Core.Models.Lager;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,9 @@ namespace FZWS.ConsoleUI
 
         static void Main(string[] args)
         {
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
             _config = new FZWSConfig()
             {
                 UstanoveId = USTANOVA_ID,
@@ -41,7 +45,7 @@ namespace FZWS.ConsoleUI
             Console.WriteLine("3. SF JediniceMjere");
             Console.WriteLine("4. SF LijekoviLager");
             Console.WriteLine("5. SF Proizvodjaci");
-            Console.WriteLine("6. Post lager");
+            Console.WriteLine("6. Send Lager");
 
             var res = Console.ReadLine();
             var broj = 0;

@@ -20,9 +20,6 @@ namespace FZWS.Core
         {
             String encoded = Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes(Username + ":" + Password));
             request.Headers.Add("Authorization", "Basic " + encoded);
-
-            ServicePointManager.Expect100Continue = true;
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
         }
     }
 }

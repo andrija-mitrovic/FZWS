@@ -47,7 +47,7 @@ namespace FZWS.Core
 
         public IList<JedinicaMjere> GetJediniceMjere()
         {
-            var xml = _sifarniciProxy.Sifarnici(_config.UstanoveId, "JediniceMjere", "");
+            var xml = _sifarniciProxy.Sifarnici(_config.UstanoveId, "JedinicaMjere", "");
             var data = SerializationHelper.XmlStringToData<JedinicaMjereResponse>(xml);
 
             return data;

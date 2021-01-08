@@ -3,6 +3,12 @@
 
 Folder FZWS.ConsoleUI contains an example of how to use this library. View file *FZWS.ConsoleUI/Program.cs*
 
+# Error "The request was aborted: Could not create SSL/TLS secure channel"
+Before instantiating FZWSConfig object, you need to add these two lines of code:
+
+  ServicePointManager.Expect100Continue = true;
+  ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
 # Open source license
 The MIT License (MIT)
 

@@ -2,8 +2,6 @@
 .NET clinet library for access to the FZOCG SOAP Web Service
 
 Folder FZWS.ConsoleUI contains an example of how to use this library. View file *FZWS.ConsoleUI/Program.cs*
-<<<<<<< HEAD
-Folder FZWS.ConsoleUI contains an example of how to use this library. View file *FZWS.ConsoleUI/Program.cs*
 
 # Open source license
 The MIT License (MIT)
@@ -27,5 +25,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=======
->>>>>>> adcc4ade31c083436eefd0ed8af36751b378a6e6
+

@@ -2,4 +2,5 @@ D:\Projects\WinForms\FZWS\FZWS.Core\bin\Debug\FZWS.Core.dll
 D:\Projects\WinForms\FZWS\FZWS.Core\bin\Debug\FZWS.Core.pdb
 D:\Projects\WinForms\FZWS\FZWS.Core\obj\Debug\FZWS.Core.dll
 D:\Projects\WinForms\FZWS\FZWS.Core\obj\Debug\FZWS.Core.pdb
-D:\Projects\WinForms\FZWS\FZWS.Core\obj\Debug\FZWS.Core.csprojResolveAssemblyReference.cache
+D:\Projects\WinForms\FZWS\FZWS.Core\obj\Debug\FZWS.Core.csprojAssemblyReference.cache
+D:\Projects\WinForms\FZWS\FZWS.Core\obj\Debug\FZWS.Core.csproj.CoreCompileInputs.cache
